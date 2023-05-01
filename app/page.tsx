@@ -1,7 +1,7 @@
 
-import SeachBar from '@/app/components/SearchBar'
-import NavigationBar from '@/app/components/NavigationBar'
-import Footer from '@/app/components/Footer'
+import SeachBar from 'components/SearchBar'
+import NavigationBar from 'components/NavigationBar'
+import Footer from 'components/Footer'
 
 
 export default function Home() {
