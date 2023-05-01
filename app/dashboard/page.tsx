@@ -1,6 +1,6 @@
 import Link from "next/link"
 
-export default function Dashboar() { 
+export default function Dashboard() { 
     return (
         <div>
             <h1>ini dashboard</h1>
