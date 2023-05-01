@@ -1,15 +1,15 @@
-import Image from 'next/image'
-import Link from 'next/link'
+
+import SeachBar from '@/app/components/SearchBar'
+import NavigationBar from '@/app/components/NavigationBar'
+import Footer from '@/app/components/Footer'
 
 
 export default function Home() {
   return (
     <main className="p-1">
-      <Link href="/s"> go to search page</Link>
-      <button className="rounded-lg duration-500 p-1 ring-2 ring-purple-500 ring-offset-4 ring-offset-slate-50 dark:ring-offset-slate-900 hover:bg-purple-700 hover:text-xl">MENU</button>
-      <footer>
-        <Image src="/themoviedb-logoattribution.svg" alt="themoviedb logo" width={100} height={100}/>
-      </footer>
+      <SeachBar />
+      <NavigationBar />
+      <Footer />
     </main>
   )
 }
