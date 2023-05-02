@@ -1,6 +1,6 @@
 export default function SeachBar() {
   return (
-    <div className="flex m-auto justify-around">
+    <div className="flex mx-auto justify-center">
       <fieldset className="space-y-1 dark:text-gray-100">
         <label htmlFor="Search" className="hidden">
           Search
