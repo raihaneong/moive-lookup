@@ -15,7 +15,7 @@ export default function Home() {
       <Header />
       <SeachBar />
       <NavigationBar />
-      <Link href="/dashboard">go to dashboard</Link>
+      <Link href="/search">go to search page</Link>
       <Footer />
     </div>
   )
