@@ -1,6 +1,6 @@
 export default function NavigationBar() {
   return (
-    <nav aria-label="Main Nav" className="flex">
+    <nav aria-label="Main Nav" className="flex fixed">
       <details className="group [&_summary::-webkit-details-marker]:hidden">
         <summary className="group flex items-center justify-between rounded-lg px-4 py-2 text-gray-500 hover:bg-gray-100 hover:text-gray-700">
           <div className="flex items-center gap-2">
@@ -25,7 +25,7 @@ export default function NavigationBar() {
 
         <nav
           aria-label="Users Nav"
-          className="mt-2 flex flex-col space-y-1 px-4"
+          className="mt-2 flex flex-col space-y-1 px-4 absolute -left-4 -top-24"
         >
           <a
             href="/search"

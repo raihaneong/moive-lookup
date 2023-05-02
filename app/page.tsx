@@ -13,8 +13,8 @@ export default function Home() {
       <Header />
       <SeachBar />
       <NavigationBar />
-      <Link href="/search">go to search page</Link>
-      <Footer />
+      {/* <Link href="/search">go to search page</Link>
+      <Footer /> */}
     </div>
   )
 }
