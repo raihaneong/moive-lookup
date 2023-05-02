@@ -2,6 +2,7 @@ import './globals.css'
 import { Inter } from 'next/font/google'
 
 const inter = Inter({ subsets: ['latin'] })
+import Title from '@/components/Title'
 
 export const metadata = {
   title: 'moiev lookup',
@@ -15,7 +16,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <Title />
+        {children}</body>
     </html>
   )
 }
