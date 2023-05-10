@@ -10,7 +10,7 @@ export default function Search() {
               <Image
                 alt="gallery"
                 className="block h-full w-full rounded-lg object-cover object-center"
-                src="https://tecdn.b-cdn.net/Image/Photos/Horizontal/Nature/4-col/Image%20(73).webp"
+                src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
                               width={500}
                               height={300}
               />
@@ -21,7 +21,7 @@ export default function Search() {
               <Image
                 alt="gallery"
                 className="block h-full w-full rounded-lg object-cover object-center"
-                              src="https://tecdn.b-cdn.net/Image/Photos/Horizontal/Nature/4-col/Image%20(74).webp"
+                              src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(74).webp"
                               width={500}
                               height={300}
               />
@@ -32,7 +32,7 @@ export default function Search() {
               <Image
                 alt="gallery"
                 className="block h-full w-full rounded-lg object-cover object-center"
-                              src="https://tecdn.b-cdn.net/Image/Photos/Horizontal/Nature/4-col/Image%20(75).webp"
+                              src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(75).webp"
                               width={500}
                               height={300}
               />
@@ -54,7 +54,7 @@ export default function Search() {
               <Image
                 alt="gallery"
                 className="block h-full w-full rounded-lg object-cover object-center"
-                              src="https://tecdn.b-cdn.net/Image/Photos/Horizontal/Nature/4-col/Image%20(76).webp"
+                              src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(76).webp"
                               width={500}
                               height={300}
               />
