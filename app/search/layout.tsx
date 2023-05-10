@@ -1,7 +1,15 @@
-export default function layoutSearch({ children }: {children: React.ReactNode}) {
+import SeachBar from "@/components/SearchBar"
+
+
+export default function layoutSearch({ children }: { children: React.ReactNode }) {
     return (
-        <main>
+        <main className="flex container mx-auto px-4">
+        <aside className="m-4">
+            <SeachBar />
+        </aside>
+        <section>
             {children}
-    </main>
+        </section>
+        </main>
     )
  }
