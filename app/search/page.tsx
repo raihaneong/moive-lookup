@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 export default function Search() { 
     return (
         <div>
@@ -5,31 +7,31 @@ export default function Search() {
   <div className="-m-1 flex flex-wrap md:-m-2">
     <div className="flex w-1/3 flex-wrap">
       <div className="w-full p-1 md:p-2">
-        <img
+        <Image
           alt="gallery"
           className="block h-full w-full rounded-lg object-cover object-center"
-          src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp" />
+          src="https://tecdn.b-cdn.net/Image/Photos/Horizontal/Nature/4-col/Image%20(73).webp" />
       </div>
     </div>
     <div className="flex w-1/3 flex-wrap">
       <div className="w-full p-1 md:p-2">
-        <img
+        <Image
           alt="gallery"
           className="block h-full w-full rounded-lg object-cover object-center"
-          src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(74).webp" />
+          src="https://tecdn.b-cdn.net/Image/Photos/Horizontal/Nature/4-col/Image%20(74).webp" />
       </div>
     </div>
     <div className="flex w-1/3 flex-wrap">
       <div className="w-full p-1 md:p-2">
-        <img
+        <Image
           alt="gallery"
           className="block h-full w-full rounded-lg object-cover object-center"
-          src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(75).webp" />
+          src="https://tecdn.b-cdn.net/Image/Photos/Horizontal/Nature/4-col/Image%20(75).webp" />
       </div>
     </div>
     <div className="flex w-1/3 flex-wrap">
       <div className="w-full p-1 md:p-2">
-        <img
+        <Image
           alt="gallery"
           className="block h-full w-full rounded-lg object-cover object-center"
           src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(70).webp" />
@@ -37,15 +39,15 @@ export default function Search() {
     </div>
     <div className="flex w-1/3 flex-wrap">
       <div className="w-full p-1 md:p-2">
-        <img
+        <Image
           alt="gallery"
           className="block h-full w-full rounded-lg object-cover object-center"
-          src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(76).webp" />
+          src="https://tecdn.b-cdn.net/Image/Photos/Horizontal/Nature/4-col/Image%20(76).webp" />
       </div>
     </div>
     <div className="flex w-1/3 flex-wrap">
       <div className="w-full p-1 md:p-2">
-        <img
+        <Image
           alt="gallery"
           className="block h-full w-full rounded-lg object-cover object-center"
           src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(72).webp" />
