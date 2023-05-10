@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function NavigationBar() {
   return (
     <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-8 lg:px-6">
-      <nav aria-label="Main Nav" className="flex fixed p-12 bottom-0 left-0">
+      <nav aria-label="Main Nav" className="flex fixed p-14 bottom-0 left-0">
         <details className="group [&_summary::-webkit-details-marker]:hidden">
           <summary className="group flex items-center justify-between rounded-lg px-4 py-2 text-gray-500 hover:bg-gray-100 hover:text-gray-700">
             <div className="flex items-center gap-2">
@@ -42,6 +42,12 @@ export default function NavigationBar() {
               className="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700"
             >
               About
+            </Link>
+            <Link
+              href="/"
+              className="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700"
+            >
+              Home
             </Link>
           </nav>
         </details>
