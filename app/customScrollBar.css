@@ -1,21 +1,20 @@
 /* width */
 ::-webkit-scrollbar {
-    width: 20px;
+    width: 10px;
   }
-  
+
   /* Track */
   ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px grey; 
     border-radius: 10px;
   }
    
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: red; 
+    background-image: linear-gradient(to right top, #9333ea, #814bf1, #6e5cf6, #5c69f8, #4c75f8, #2888fe, #009aff, #00a9ff, #00c1fd, #00d5e9, #0ae4ca, #86efac);
     border-radius: 10px;
   }
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: #b30000; 
+    background: white; 
   }
