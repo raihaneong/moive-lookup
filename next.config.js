@@ -9,7 +9,11 @@ const nextConfig = {
     remotePatterns: [
       {
         hostname: 'tecdn.b-cdn.net'
-      }
+      },
+      {
+        protocol: 'https',
+        hostname: 'image.tmdb.org',
+      },
     ]
   }
 }
