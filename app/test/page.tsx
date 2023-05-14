@@ -8,19 +8,19 @@
 // }
 
 
-// const test = async () => {
-//     const data = await getData();
-//     return (
-//         <div>
-//             <h1>Test</h1>
-//             {data.results.map((item: any) => (
-//                 <>
-//                     <h1 key={item.id}>{item.name}</h1>
-//                     <p>{item.overview}</p>
-//                 </>
-//                 ))}
-//         </div>
-//     )
-// }
+const test = async () => {
+    // const data = await getData();
+    return (
+        <div>
+            <h1>Test</h1>
+            {/* {data.results.map((item: any) => (
+                <>
+                    <h1 key={item.id}>{item.name}</h1>
+                    <p>{item.overview}</p>
+                </>
+                ))} */}
+        </div>
+    )
+}
 
-// export default test;
+export default test;
