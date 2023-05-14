@@ -1,21 +1,19 @@
-'use client'
+"use client";
 
 import { useSearhTerm } from "@/lib/searchTerm";
 
 export default function SeachBar() {
-
-  const setSearch = useSearhTerm(state => state.setSearch);
+  const setSearch = useSearhTerm((state) => state.setSearch);
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     event.preventDefault();
     setSearch(event.target.value);
     console.log(event.target.value);
-  }
+  };
 
   const handleFormSubmit = () => {
-    console.log('help');
-  }
-
+    console.log("help");
+  };
 
   return (
     <div className="flex justify-center">
