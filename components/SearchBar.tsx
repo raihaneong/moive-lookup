@@ -7,6 +7,7 @@ export default function SeachBar() {
   const setSearch = useSearhTerm(state => state.setSearch);
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    event.preventDefault();
     setSearch(event.target.value);
     console.log(event.target.value);
   }
@@ -27,7 +28,7 @@ export default function SeachBar() {
           <div className="relative">
             <span className="absolute inset-y-0 left-0 flex items-center pl-2">
               <button
-                type="button"
+                type="submit"
                 title="search"
                 className="p-1 focus:outline-none focus:ring"
               >
@@ -42,7 +43,7 @@ export default function SeachBar() {
             </span>
             <input
               type="search"
-              name="pooouu"
+              name="search"
               placeholder="Search..."
               onChange={handleChange}
               className="w-32 py-2 pl-10 text-sm rounded-md sm:w-auto focus:outline-none dark:bg-gray-800 dark:text-gray-100 focus:dark:bg-gray-900 focus:dark:border-violet-400"
