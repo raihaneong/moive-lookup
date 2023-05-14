@@ -4,7 +4,6 @@ import { useMovieStore } from "@/lib/searchTerm";
 
 export default function SeachBar() {
 
-  const search = useMovieStore(state => state.search);
   const setSearch = useMovieStore(state => state.setSearch);
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {

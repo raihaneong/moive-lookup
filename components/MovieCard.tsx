@@ -3,6 +3,13 @@ import Image from "next/image";
 
 import { useMovieStore } from "@/lib/searchTerm";
 
+const callAPI = async (search: string) => {
+  const res = await fetch(`https://api.themoviedb.org/3/search/multi?api_key=${process.env.API_KEY}&language=en-US&query=${search}&page=1&include_adult=false`)
+  if (!res.ok) {
+    throw new Error(res.statusText)
+  }
+  console.log(res.json())
+}
 export default function MovieCard() {
 
   const search = useMovieStore(state => state.search);
