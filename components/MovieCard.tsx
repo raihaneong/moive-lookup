@@ -23,12 +23,6 @@ export default function MovieCard() {
           <h1>{search}</h1>
         <div>
             <h1>Test</h1>
-            {data.results.map((item: any) => (
-                <>
-                    <h1 key={item.id}>{item.name}</h1>
-                    <p>{item.overview}</p>
-                </>
-                ))}
         </div>
         </div>
       </div>

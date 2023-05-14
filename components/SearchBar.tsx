@@ -4,7 +4,7 @@ import { useSearhTerm } from "@/lib/searchTerm";
 
 export default function SeachBar() {
   const setSearch = useSearhTerm((state) => state.setSearch);
-  const setResult = useSearhTerm((state) => state.setResult)
+
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     event.preventDefault();
@@ -19,7 +19,7 @@ export default function SeachBar() {
       if (!res.ok) {
           throw new Error(res.statusText)
       }
-      setResult(res.json())
+      console.log(res.json())
   };
 
   return (
