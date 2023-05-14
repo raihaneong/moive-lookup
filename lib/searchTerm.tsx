@@ -1,11 +1,11 @@
 import {create} from 'zustand'
 
-interface MovieStore {
+interface ISearchTerm {
     search: string
     setSearch: (search: string) => void
 }
 
-export const useMovieStore = create<MovieStore>((set) => ({
+export const useMovieStore = create<ISearchTerm>((set) => ({
     search: '',
     setSearch: (search) => set({search})
 }))
