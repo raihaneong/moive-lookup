@@ -1,7 +1,5 @@
 'use client'
 
-import Link from 'next/link'
-
 import { useState } from 'react'
 
 import SeachBar from 'components/SearchBar'
@@ -17,7 +15,7 @@ export default function Home() {
     <div className="flex-col m-4">
       <Header />
       <SeachBar />
-      {/* <Link href="/search">go to search page</Link>
+      {/* 
       <Footer /> */}
     </div>
   )
