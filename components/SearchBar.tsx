@@ -1,30 +1,9 @@
 'use client'
-import { useState, useEffect } from "react"
+
 
 export default function SeachBar() {
 
-  const [search, setSearch] = useState('')
-  const [results, setResults] = useState([])
-  const [loading, setLoading] = useState(false)
 
-
-  const searchMovies = async (search: string) => {
-    const res = await fetch(`https://api.themoviedb.org/3/search/movie?api_key=${process.env.API_KEY}&query=${search}`)
-    const data = await res.json()
-    console.log(data)
-    setResults(data.results)
-  }
-
-  useEffect(() => {
-    if (search.length > 2) {
-      setLoading(true)
-      searchMovies(search)
-      setLoading(false)
-    }
-  }, [search])
-
-  if (loading) return <p>Loading...</p>;
-  if (!results) return <p>No profile data</p>;
 
   return (
     <div className="flex justify-center">
@@ -54,7 +33,6 @@ export default function SeachBar() {
               type="search"
               name="Search"
               placeholder="Search..."
-              onChange={(e) => setSearch(e.target.value)}
               className="w-32 py-2 pl-10 text-sm rounded-md sm:w-auto focus:outline-none dark:bg-gray-800 dark:text-gray-100 focus:dark:bg-gray-900 focus:dark:border-violet-400"
             />
           </div>
