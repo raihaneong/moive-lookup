@@ -1,6 +1,7 @@
 "use client";
 
 import { useSearhTerm } from "@/lib/searchTerm";
+import { FormEvent } from "react";
 
 export default function SeachBar() {
   const setSearch = useSearhTerm((state) => state.setSearch);
@@ -12,7 +13,8 @@ export default function SeachBar() {
     console.log(event.target.value);
   };
 
-  const handleFormSubmit = async () => {
+  const handleFormSubmit = async (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
     console.log("help");
       const res = await fetch(`
       https://api.themoviedb.org/3/search/multi?api_key=${process.env.API_KEY}&language=en-US&query=oshi&page=1&include_adult=false`)
