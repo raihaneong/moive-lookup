@@ -12,6 +12,7 @@ export default function MovieCard() {
       <div className="-m-1 flex flex-wrap md:-m-2">
         <div className="flex w-1/3 flex-wrap">
           <div className="w-full p-1 md:p-2">
+            <h1>{search}</h1>
             <Image
               alt="gallery"
               className="block h-full w-full rounded-lg object-cover object-center"
@@ -20,7 +21,6 @@ export default function MovieCard() {
               height={300}
             />
           </div>
-          <h1>{search}</h1>
         <div>
             <h1>Test</h1>
         </div>

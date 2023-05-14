@@ -19,7 +19,7 @@ export default function SeachBar() {
       if (!res.ok) {
           throw new Error(res.statusText)
       }
-      console.log(res.json())
+      return res.json()
   };
 
   return (
