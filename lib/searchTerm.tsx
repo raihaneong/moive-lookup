@@ -5,7 +5,7 @@ interface ISearchTerm {
     setSearch: (search: string) => void
 }
 
-export const useMovieStore = create<ISearchTerm>((set) => ({
+export const useSearhTerm = create<ISearchTerm>((set) => ({
     search: '',
     setSearch: (search) => set({search})
 }))

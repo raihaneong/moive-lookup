@@ -1,23 +1,27 @@
 'use client'
 
-import { useMovieStore } from "@/lib/searchTerm";
+import { useSearhTerm } from "@/lib/searchTerm";
 
 export default function SeachBar() {
 
-  const setSearch = useMovieStore(state => state.setSearch);
+  const setSearch = useSearhTerm(state => state.setSearch);
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setSearch(event.target.value);
     console.log(event.target.value);
   }
 
+  const handleFormSubmit = () => {
+    console.log('help');
+  }
+
 
   return (
     <div className="flex justify-center">
-      <form action="/search">
+      <form action="/search" onSubmit={handleFormSubmit}>
         <fieldset className="dark:text-gray-100">
           <label htmlFor="Search" className="hidden">
-            safda
+            search
           </label>
           <input type="submit" hidden />
           <div className="relative">

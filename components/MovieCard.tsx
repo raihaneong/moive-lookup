@@ -1,10 +1,10 @@
 'use client'
 import Image from "next/image";
 
-import { useMovieStore } from "@/lib/searchTerm";
+import { useSearhTerm } from "@/lib/searchTerm";
 export default function MovieCard() {
 
-  const search = useMovieStore(state => state.search);
+  const search = useSearhTerm(state => state.search);
   return (
     <div className="container mx-auto px-5 py-2 lg:px-32 lg:pt-12">
       <div className="-m-1 flex flex-wrap md:-m-2">
