@@ -4,6 +4,7 @@ import { useSearhTerm } from "@/lib/searchTerm";
 
 export default function SeachBar() {
   const setSearch = useSearhTerm((state) => state.setSearch);
+  const setResult = useSearhTerm((state) => state.setResult)
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     event.preventDefault();
@@ -11,8 +12,14 @@ export default function SeachBar() {
     console.log(event.target.value);
   };
 
-  const handleFormSubmit = () => {
+  const handleFormSubmit = async () => {
     console.log("help");
+      const res = await fetch(`
+      https://api.themoviedb.org/3/search/multi?api_key=${process.env.API_KEY}&language=en-US&query=oshi&page=1&include_adult=false`)
+      if (!res.ok) {
+          throw new Error(res.statusText)
+      }
+      setResult(res.json())
   };
 
   return (
