@@ -17,7 +17,7 @@ export default function SeachBar() {
       <form action="/search">
         <fieldset className="dark:text-gray-100">
           <label htmlFor="Search" className="hidden">
-            Search
+            safda
           </label>
           <input type="submit" hidden />
           <div className="relative">
