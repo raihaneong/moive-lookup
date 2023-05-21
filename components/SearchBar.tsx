@@ -19,12 +19,12 @@ export default function SeachBar() {
       if (!res.ok) {
           throw new Error(res.statusText)
       }
-      return res.json()
+      console.log(res.json())
   };
 
   return (
     <div className="flex justify-center">
-      <form action="/search" onSubmit={handleFormSubmit}>
+      <form action="/search" >
         <fieldset className="dark:text-gray-100">
           <label htmlFor="Search" className="hidden">
             search
