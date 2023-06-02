@@ -1,10 +1,8 @@
 'use client'
 import Image from "next/image";
 
-import { useSearhTerm } from "@/lib/searchTerm";
 export default function MovieCard() {
 
-  const search = useSearhTerm(state => state.search);
 
   
   return (
