@@ -1,10 +1,8 @@
 "use client";
 
-import { useSearhTerm } from "@/lib/searchTerm";
 import { FormEvent } from "react";
 
 export default function SeachBar() {
-  const setSearch = useSearhTerm((state) => state.setSearch);
 
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
