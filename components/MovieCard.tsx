@@ -1,10 +1,8 @@
 'use client'
 import Image from "next/image";
 
-import { useSearhTerm } from "@/lib/searchTerm";
 export default function MovieCard() {
 
-  const search = useSearhTerm(state => state.search);
 
   
   return (
@@ -12,7 +10,7 @@ export default function MovieCard() {
       <div className="-m-1 flex flex-wrap md:-m-2">
         <div className="flex w-1/3 flex-wrap">
           <div className="w-full p-1 md:p-2">
-            <h1>{search}</h1>
+            <h1>search</h1>
             <Image
               alt="gallery"
               className="block h-full w-full rounded-lg object-cover object-center"
