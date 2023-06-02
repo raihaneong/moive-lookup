@@ -5,21 +5,6 @@ import { FormEvent } from "react";
 export default function SeachBar() {
 
 
-  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    event.preventDefault();
-    setSearch(event.target.value);
-    console.log(event.target.value);
-  };
-
-  const handleFormSubmit = async (event: FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-      const res = await fetch(`https://api.themoviedb.org/3/search/multi?api_key=${process.env.API_KEY}&language=en-US&query=oshi&page=1&include_adult=false`)
-      if (!res.ok) {
-          throw new Error(res.statusText)
-      }
-      console.log(res.json())
-  };
-
   return (
     <div className="flex justify-center">
       <form action="/search" >
