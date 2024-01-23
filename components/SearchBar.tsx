@@ -1,26 +1,7 @@
 "use client";
 
-import { useSearhTerm } from "@/lib/searchTerm";
-import { FormEvent } from "react";
-
 export default function SeachBar() {
-  const setSearch = useSearhTerm((state) => state.setSearch);
 
-
-  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    event.preventDefault();
-    setSearch(event.target.value);
-    console.log(event.target.value);
-  };
-
-  const handleFormSubmit = async (event: FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-      const res = await fetch(`https://api.themoviedb.org/3/search/multi?api_key=${process.env.API_KEY}&language=en-US&query=oshi&page=1&include_adult=false`)
-      if (!res.ok) {
-          throw new Error(res.statusText)
-      }
-      console.log(res.json())
-  };
 
   return (
     <div className="flex justify-center">
@@ -50,7 +31,6 @@ export default function SeachBar() {
               type="search"
               name="search"
               placeholder="Search..."
-              onChange={handleChange}
               className="w-32 py-2 pl-10 text-sm rounded-md sm:w-auto focus:outline-none dark:bg-gray-800 dark:text-gray-100 focus:dark:bg-gray-900 focus:dark:border-violet-400"
             />
           </div>
